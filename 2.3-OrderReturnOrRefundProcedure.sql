@@ -33,7 +33,7 @@ begin
 		set StockQuantity = StockQuantity + @productQuantity
 		where ProductID = @ProductID
 
-		print CAST(@ProductID AS VARCHAR(50)) + ' order was ' + @OrderStatus
+		print CAST(@OrderID AS VARCHAR(50)) + ' order was ' + @OrderStatus
 
 		COMMIT;
 	END TRY
